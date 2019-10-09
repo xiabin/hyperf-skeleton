@@ -79,5 +79,15 @@
         "cs-fix": "php-cs-fixer fix $1",
         "analyze": "phpstan analyse --memory-limit 300M -l 0 -c phpstan.neon ./app ./config",
         "start": "php ./bin/hyperf.php start"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer"
+        },
+        "hyperf": {
+            "type": "path",
+            "url": "../hyperf/src/*"
+        }
     }
 }
